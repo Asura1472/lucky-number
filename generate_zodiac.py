@@ -10,28 +10,22 @@ ZODIACS = [
 ]
 
 def generate_data():
-    today_kst = datetime.now(KST).strftime("%Y-%m-%d")
+    now_kst = datetime.now(KST)
 
-    # 1~45 중 중복 없이 12개
-    numbers = random.sample(range(1, 46), 12)
-
-    items = []
-    for zodiac, number in zip(ZODIACS, numbers):
-        items.append({
-            "zodiac": zodiac,
-            "number": number
-        })
-
-    data = {
-        "date": today_kst,
-        "items": items
+    return {
+        "date": now_kst.strftime("%Y-%m-%d"),
+        "generated_at": now_kst.isoformat(),
+        "items": [
+            {"zodiac": zodiac, "number": number}
+            for zodiac, number in zip(
+                ZODIACS,
+                random.sample(range(1, 46), 12)
+            )
+        ]
     }
-
-    return data
 
 def main():
     data = generate_data()
-
     with open("today_zodiac.json", "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
 
