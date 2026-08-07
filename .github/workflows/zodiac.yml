@@ -2,7 +2,9 @@ name: Generate Daily Zodiac Numbers
 
 on:
   schedule:
-    - cron: '29 15 * * *'
+    - cron: '29 15 * * *'  # KST 00:29
+    - cron: '29 17 * * *'  # KST 02:29
+    - cron: '29 19 * * *'  # KST 04:29
   workflow_dispatch:
 
 permissions:
