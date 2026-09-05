@@ -1,14 +1,14 @@
 {
-  "date": "2026-09-05",
-  "generated_at": "2026-09-05T03:30:49.379498+09:00",
+  "date": "2026-09-06",
+  "generated_at": "2026-09-06T02:25:26.998895+09:00",
   "items": [
     {
       "zodiac": "쥐",
-      "number": 11
+      "number": 21
     },
     {
       "zodiac": "소",
-      "number": 12
+      "number": 42
     },
     {
       "zodiac": "호랑이",
@@ -16,39 +16,39 @@
     },
     {
       "zodiac": "토끼",
-      "number": 4
-    },
-    {
-      "zodiac": "용",
       "number": 39
     },
     {
+      "zodiac": "용",
+      "number": 43
+    },
+    {
       "zodiac": "뱀",
-      "number": 33
+      "number": 11
     },
     {
       "zodiac": "말",
-      "number": 27
+      "number": 40
     },
     {
       "zodiac": "양",
-      "number": 45
+      "number": 24
     },
     {
       "zodiac": "원숭이",
-      "number": 35
+      "number": 1
     },
     {
       "zodiac": "닭",
-      "number": 42
+      "number": 4
     },
     {
       "zodiac": "개",
-      "number": 9
+      "number": 17
     },
     {
       "zodiac": "돼지",
-      "number": 34
+      "number": 5
     }
   ]
 }
